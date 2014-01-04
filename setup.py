@@ -9,7 +9,7 @@ def read(fname):
     return open(os.path.join(os.path.dirname(__file__), fname)).read()
 
 setup(
-    name = "pytexeq",
+    name = "texeq",
     version = "0.1",
     author = "Emanuele Ruffaldi",
     author_email = "emanuele.ruffaldi@gmail.com",
@@ -17,7 +17,8 @@ setup(
     license = "BSD",
     keywords = "equations LaTeX",
     #url = "http://packages.python.org/an_example_pypi_project",
-    packages=['cachedtexeq'],
+    packages=['texeq'],
+    scripts=["scripts/texeq"],
     long_description=read('README.md'),
     classifiers=[
         "Development Status :: 4 - Beta",
